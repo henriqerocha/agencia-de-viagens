@@ -4,7 +4,9 @@
     box-sizing: border-box;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
+body{
+    background-color: #ebebeb;
+}
 header{
     width: 100%;
     height: 6vh;
@@ -133,40 +135,155 @@ button{
 
 
 
-#ofertas{
+#ofertas, #explorar{
     display: flex;
     width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
 }
-.title-ofertas, .title-ofertas h3{
+.title-ofertas, .title-ofertas h3,
+.title-explorar, .title-explorar h3{
     margin: 15px 0;
 }
 .container-imagens{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 400px;
-    background-color: #5D15D1;
+    min-height: 350px;
 }
 .left-card{
     width: calc(100%/2 - 20px);
     height: 100%;
+    position: relative;
+}
+.cap-img-oferta{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    background-color: rgb(0, 0, 0, 0.7);
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .left-card img{
     width: 100%;
-    height: 100%;
 }
 .right-card{
     display: flex;
     flex-grow: 1;
     flex-wrap: wrap;
-    width: calc(100%/2 - 20px);
-    margin: 10px;
-    height: 100%;
+    width: calc(100%/2);
+    margin-left: 10px;
 }
 .right-card img{
     object-fit: cover;
-    /* width: calc(90%/2 - 20px); */
-    width: 45%;
-    margin: 10px;
-    height: calc(90%/2);
+    width: 100%;
+    height: 100%;
+}
+figure{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: calc(100%/2 - 10px);
+    margin: 1px 5px;
+}
+.img-oferta{
+    position: relative;
+}
+
+.right-card-natureza{
+    width: 50%;
+    height: 100%;
+}
+.right-card-natureza img{
+    width: 100%;
+    height: 100%;
+}
+.figure-natureza{
+    width: 100%;
+    height: 100%;
+}
+.cap-img-natu{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    height: 80px;
+    width: 100%;
+    background-color: #fff;
+}
+
+footer{
+    height: 20vh;
+    background-color: #5D15D1;
+    padding: 10px 0;
+}
+.contato img,
+.r-sociais img{
+    width: 20px;
+    height: 20px;
+}
+.contato,
+.r-sociais{
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    color: #fff;
+}
+.contato h3,
+.r-sociais h3{
+    margin: 15px 0;
+}
+.container-bot{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px){
+    .left-card{
+        width: 100%;
+    }
+    .right-card{
+        width: 100%;
+    }
+    figure{
+        width: 100%;
+    }
+    .right-card img{
+        width: 100%;
+    }
+    .container-imagens{
+        display: flex;
+        flex-direction: column;
+    }
+    .right-card-natureza{
+        width: 100%;
+    }
+    footer{
+        height: 35vh;
+    }
+    .container-bot{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 540px){
+    .ida-volta, .orig-dest{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .dt-ida, .dt-volta{
+        width: 100%;
+    }
+    .user-input-ida{
+        width: 100%;
+    }
+    #capa-form{
+        height: 1070px;
+    }
 }
