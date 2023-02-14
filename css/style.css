@@ -105,7 +105,8 @@ form{
 .origem, .destino{
     display: flex;
     flex-direction: column;
-    width: 49%;
+    max-width: 480px;
+    width: 100%;
 }
 .ida-volta, .orig-dest{
     width: 100%;
