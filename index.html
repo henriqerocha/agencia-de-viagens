@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Agência de viagens - encontre os melhores preços de passagens"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>HR Viagens</title>
+  </head>
+  <body>
+    <header>
+      <div class="top container">
+        <figure class="img-logo">
+          <img src="/assets/local-logo.png" alt="" />
+        </figure>
+        <div class="title-logo">
+          <span>Agência de Viagens</span>
+        </div>
+      </div>
+    </header>
+
+    <section id="capa-form">
+      <div class="area-form container">
+        <div class="title-form">
+          <h2>Solicite um orçamento</h2>
+        </div>
+
+        <div class="content-form">
+          <h3>Informe seus dados</h3>
+
+          <form
+            action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/"
+          >
+            <label for="userNome" class="label-input">Nome</label>
+            <input
+              class="user-input"
+              type="text"
+              name="nome"
+              id="userNome"
+              placeholder="Digite seu nome completo"
+            />
+
+            <label for="userEmail" class="label-input">Email</label>
+            <input
+              class="user-input"
+              type="email"
+              name="email"
+              id="userEmail"
+              placeholder="Digite seu Email"
+            />
+
+            <label for="userTel" class="label-input">Celular</label>
+            <input
+              class="user-input"
+              type="tel"
+              name="telefone"
+              id="userTel"
+              placeholder="(xx) xxxxx-xxxx"
+            />
+            <div class="ida-volta">
+              <div class="dt-ida">
+                <label for="userIda" class="label-input">Data da ida</label>
+                <input
+                  class="user-input-ida"
+                  type="date"
+                  name="dt-ida"
+                  id="userIda"
+                />
+              </div>
+
+              <div class="dt-volta">
+                <label for="userVolta" class="label-input">Data da volta</label>
+                <input
+                  class="user-input-volta"
+                  type="date"
+                  name="dt-ida"
+                  id="userIda"
+                />
+              </div>
+            </div>
+
+            <div class="orig-dest">
+              <div class="origem">
+                <label for="orig" class="label-input">Origem</label>
+                <select name="origem" id="orig" class="user-input-origem">
+                  <option value="">Partindo de</option>
+                  <option value="RJ">Rio de Janeiro</option>
+                  <option value="SP">São Paulo</option>
+                  <option value="MN">Manaus</option>
+                </select>
+              </div>
+              <div class="destino">
+                <label for="dest" class="label-input">Destino</label>
+                <select name="destino" id="dest" class="user-input-destino">
+                  <option value="">Indo para</option>
+                  <option value="RJ">Rio de Janeiro</option>
+                  <option value="SP">São Paulo</option>
+                  <option value="MN">Manaus</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="opcoes-cama">
+              <h4 class="label-input">Quarto com cama infantil?</h4>
+              <input
+                type="radio"
+                name="option-cama"
+                value="sim"
+                id="valorSim"
+              />
+              <label for="valorSim">Sim</label>
+              <input
+                type="radio"
+                name="option-cama"
+                value="nao"
+                id="valorNao"
+              />
+              <label for="valorNao">Não</label>
+            </div>
+
+            <div class="pref-hospedagem">
+              <h4 class="label-input">Preferências da Hospedagem</h4>
+
+              <input
+                type="checkbox"
+                name="preferencia[]"
+                id="user-piscina"
+                value="piscina"
+              />
+              <label for="user-piscina">Piscina</label>
+
+              <input
+                type="checkbox"
+                name="preferencia[]"
+                id="user-wifi"
+                value="wifi"
+              />
+              <label for="user-wifi">Wi-fi</label>
+
+              <input
+                type="checkbox"
+                name="preferencia[]"
+                id="user-garagem"
+                value="garagem"
+              />
+              <label for="user-garagem">Garagem</label>
+
+              <input
+                type="checkbox"
+                name="preferencia[]"
+                id="user-suite"
+                value="suite"
+              />
+              <label for="user-suite">Suíte</label>
+            </div>
+
+            <button type="submit">Solicitar orçamento</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
